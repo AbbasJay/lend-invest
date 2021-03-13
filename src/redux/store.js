@@ -1,14 +1,13 @@
 import { createStore, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 
-import currentLoansReducer from "./current-loans";
+import { currentLoansReducer } from "./current-loans/reducers";
 
-const composeEnhancer =
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || composeWithDevTools();
-
-export default createStore(
+export const store = createStore(
   combineReducers({
     currentLoans: currentLoansReducer,
   }),
-  composeEnhancer()
+  composeWithDevTools()
 );
+
+export default store;
