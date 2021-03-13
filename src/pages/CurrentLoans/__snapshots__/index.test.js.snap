@@ -1,17 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CurrentLoans renders correctly to snapshot 1`] = `
-<div
-  className="loans-container"
->
-  <div>
-    8,250
-  </div>
-  <div>
-    14,250
-  </div>
-  <div>
-    2,250
-  </div>
-</div>
+Array [
+  <div
+    className="loans-container"
+  >
+    <div>
+      8,250
+    </div>
+    <div>
+      14,250
+    </div>
+    <div>
+      2,250
+    </div>
+  </div>,
+  <div
+    className="amount-container"
+  >
+    Total amount available for investment:
+    <b
+      className="total-amount"
+    >
+      £24,750
+    </b>
+  </div>,
+]
 `;

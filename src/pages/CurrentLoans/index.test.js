@@ -1,37 +1,28 @@
 import React from "react";
-
-import { shallow } from "enzyme";
-import { CurrentLoans } from "./";
-
+import { Provider } from "react-redux";
+import { createStore } from "redux";
 import renderer from "react-test-renderer";
 
-jest.mock("react-redux", () => ({ useSelector: () => loans }));
+import { shallow } from "enzyme";
 
-const loans = [
-  {
-    id: "1",
-    available: "8,250",
-  },
-  {
-    id: "2",
-    available: "14,250",
-  },
-  {
-    id: "3",
-    available: "2,250",
-  },
-];
+import { CurrentLoans } from "./";
+import { mockInitialState } from "../../mocks";
+
+const mockStore = createStore(mockInitialState);
 
 const renderedComponent = () => {
-  return shallow(<CurrentLoans />);
+  return shallow(
+    <Provider store={mockStore}>
+      <CurrentLoans />
+    </Provider>
+  );
 };
-
-beforeEach(() => {
-  jest.resetAllMocks();
-});
 
 describe("CurrentLoans", () => {
   const component = renderedComponent();
+  beforeEach(() => {
+    jest.resetAllMocks();
+  });
 
   it("renders correctly to snapshot", () => {
     const snapshot = renderer.create(component).toJSON();
