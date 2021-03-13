@@ -1,0 +1,18 @@
+.loans-container {
+  width: calc(100vw - 100px);
+  height: calc(100vh - 100px);
+  margin: auto;
+}
+
+.amount-container {
+  width: calc(100vw - 100px);
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-amount {
+  margin-left: 4px;
+}
