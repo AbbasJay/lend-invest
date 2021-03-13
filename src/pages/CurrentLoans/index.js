@@ -17,9 +17,10 @@ export const CurrentLoans = () => {
 
   return (
     <>
+      <h1>Current Loans</h1>
       <div className={"loans-container"}>{renderedLoans}</div>
       <div className={"amount-container"}>
-        Total amount available for investment:
+        Total amount available for investments:
         <b className={"total-amount"}>{totalAmount}</b>
       </div>
     </>

@@ -2,23 +2,119 @@
 
 exports[`CurrentLoans renders correctly to snapshot 1`] = `
 Array [
+  <h1>
+    Current Loans
+  </h1>,
   <div
     className="loans-container"
   >
-    <div>
-      8,250
+    <div
+      className="loan-item"
+    >
+      <div>
+        <h3 />
+        <div
+          className="loan-details"
+        >
+          <span>
+            Amount: £undefined
+          </span>
+          <span>
+            Anuual return: undefined%
+          </span>
+          <span>
+            Loan to value: undefined%
+          </span>
+        </div>
+      </div>
+      <div
+        className="invest-container"
+      >
+        <div
+          className="invest-text"
+        />
+        <div>
+          <button
+            className="invest-button"
+          >
+            INVEST
+          </button>
+        </div>
+      </div>
     </div>
-    <div>
-      14,250
+    <div
+      className="loan-item"
+    >
+      <div>
+        <h3 />
+        <div
+          className="loan-details"
+        >
+          <span>
+            Amount: £undefined
+          </span>
+          <span>
+            Anuual return: undefined%
+          </span>
+          <span>
+            Loan to value: undefined%
+          </span>
+        </div>
+      </div>
+      <div
+        className="invest-container"
+      >
+        <div
+          className="invest-text"
+        />
+        <div>
+          <button
+            className="invest-button"
+          >
+            INVEST
+          </button>
+        </div>
+      </div>
     </div>
-    <div>
-      2,250
+    <div
+      className="loan-item"
+    >
+      <div>
+        <h3 />
+        <div
+          className="loan-details"
+        >
+          <span>
+            Amount: £undefined
+          </span>
+          <span>
+            Anuual return: undefined%
+          </span>
+          <span>
+            Loan to value: undefined%
+          </span>
+        </div>
+      </div>
+      <div
+        className="invest-container"
+      >
+        <div
+          className="invest-text"
+        />
+        <div>
+          <button
+            className="invest-button"
+          >
+            INVEST
+          </button>
+        </div>
+      </div>
     </div>
   </div>,
   <div
     className="amount-container"
   >
-    Total amount available for investment:
+    Total amount available for investments:
     <b
       className="total-amount"
     >

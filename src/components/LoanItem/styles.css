@@ -1,0 +1,32 @@
+.loan-item {
+  background-color: lightgray;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loan-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.invest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.invest-text {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.invest-button {
+  height: 80px;
+  width: 160px;
+  background-color: yellow;
+  cursor: pointer;
+  font-size: 25px;
+}
