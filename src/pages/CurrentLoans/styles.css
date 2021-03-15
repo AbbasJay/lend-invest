@@ -1,3 +1,10 @@
+.heading {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
 .loans-container {
   width: calc(100vw - 100px);
   height: calc(100vh - 200px);
@@ -17,4 +24,26 @@
 
 .total-amount {
   margin-left: 4px;
+}
+
+.invest-modal-background {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.75;
+  justify-content: center;
+  align-items: center;
+}
+
+.invest-modal-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  background-color: white;
 }

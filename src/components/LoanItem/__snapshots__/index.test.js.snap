@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoanItem renders correctly to snapshot 1`] = `
+<div
+  className="loan-item"
+>
+  <div>
+    <h3>
+      title 1.
+    </h3>
+    <div
+      className="loan-details"
+    >
+      <span>
+        Amount: £85,754
+      </span>
+      <span>
+        Annual return: 1.5%
+      </span>
+      <span>
+        Loan to value: 48.80%
+      </span>
+    </div>
+  </div>
+  <div
+    className="invest-container"
+  >
+    <div
+      className="invest-text"
+    />
+    <div>
+      <button
+        className="invest-button"
+        onClick={[Function]}
+      >
+        INVEST
+      </button>
+    </div>
+  </div>
+</div>
+`;

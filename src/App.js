@@ -8,11 +8,11 @@ import { CurrentLoans } from "./pages/CurrentLoans";
 
 const App = () => {
   const dispatch = useDispatch();
-  const [loading, setLoding] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     dispatch(setCurrentLoans(currentLoansData));
-    setLoding(false);
+    setLoading(false);
   }, [dispatch]);
 
   return loading ? <div>loading...</div> : <CurrentLoans />;
