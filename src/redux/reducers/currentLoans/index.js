@@ -20,6 +20,7 @@ export const currentLoansReducer = (state = initialState, action) => {
         (loan) => loan.id === action.payload.loanId
       );
       newLoans[loanIndex].available = action.payload.investAmount;
+      newLoans[loanIndex].invested = true;
 
       return {
         ...state,

@@ -1,5 +1,5 @@
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 import { showInvestModal, setSelectedLoan } from "../../redux/actions";
 
@@ -25,7 +25,7 @@ export const LoanItem = ({ loan }) => {
       </div>
 
       <div className={"invest-container"}>
-        <div className={"invest-text"}>{}</div>
+        <div className={"invest-text"}>{loan.invested && "Invested"}</div>
         <div>
           <button className={"invest-button"} onClick={handleClick}>
             INVEST
