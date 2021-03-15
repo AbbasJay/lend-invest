@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvestInModal renders correctly to snapshot 1`] = `
+<div
+  className="invest-modal-background"
+  onClick={[Function]}
+>
+  <div
+    className="invest-modal-container"
+  />
+  <div
+    className="invest-modal-content"
+  >
+    <h1>
+      Invest in loan
+    </h1>
+    <div
+      className="invest-details"
+    >
+      <div
+        className="invest-title"
+      >
+        <span>
+          title 1.
+        </span>
+      </div>
+      <div
+        className="invest-items"
+      >
+        <span>
+          Amount available: £8,250
+        </span>
+        <span>
+          Loan ends in: NaN days
+        </span>
+      </div>
+      <div
+        className="invest-amount-text"
+      >
+        <span>
+          Investment amount (£)
+        </span>
+      </div>
+    </div>
+    <div
+      className="invest-amount-container"
+    >
+      <input
+        className="invest-input"
+        onChange={[Function]}
+      />
+      <button
+        className="invest-button"
+        onClick={[Function]}
+      >
+        INVEST
+      </button>
+    </div>
+    
+  </div>
+</div>
+`;

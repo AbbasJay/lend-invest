@@ -24,9 +24,9 @@
 }
 
 .invest-button {
-  height: 80px;
+  height: 50px;
   width: 160px;
   background-color: yellow;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 20px;
 }

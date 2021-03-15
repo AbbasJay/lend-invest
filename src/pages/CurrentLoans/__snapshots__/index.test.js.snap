@@ -9,119 +9,7 @@ Array [
   </div>,
   <div
     className="loans-container"
-  >
-    <div
-      className="loan-item"
-    >
-      <div>
-        <h3>
-          title 1.
-        </h3>
-        <div
-          className="loan-details"
-        >
-          <span>
-            Amount: £85,754
-          </span>
-          <span>
-            Annual return: 1.5%
-          </span>
-          <span>
-            Loan to value: 48.80%
-          </span>
-        </div>
-      </div>
-      <div
-        className="invest-container"
-      >
-        <div
-          className="invest-text"
-        />
-        <div>
-          <button
-            className="invest-button"
-            onClick={[Function]}
-          >
-            INVEST
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      className="loan-item"
-    >
-      <div>
-        <h3>
-          Title 2.
-        </h3>
-        <div
-          className="loan-details"
-        >
-          <span>
-            Amount: £85,754
-          </span>
-          <span>
-            Annual return: 1.5%
-          </span>
-          <span>
-            Loan to value: 48.80%
-          </span>
-        </div>
-      </div>
-      <div
-        className="invest-container"
-      >
-        <div
-          className="invest-text"
-        />
-        <div>
-          <button
-            className="invest-button"
-            onClick={[Function]}
-          >
-            INVEST
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      className="loan-item"
-    >
-      <div>
-        <h3>
-          Title 3.
-        </h3>
-        <div
-          className="loan-details"
-        >
-          <span>
-            Amount: £85,754
-          </span>
-          <span>
-            Annual return: 1.5%
-          </span>
-          <span>
-            Loan to value: 48.80%
-          </span>
-        </div>
-      </div>
-      <div
-        className="invest-container"
-      >
-        <div
-          className="invest-text"
-        />
-        <div>
-          <button
-            className="invest-button"
-            onClick={[Function]}
-          >
-            INVEST
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>,
+  />,
   <div
     className="amount-container"
   >
@@ -129,7 +17,7 @@ Array [
     <b
       className="total-amount"
     >
-      £24,750
+      £0
     </b>
   </div>,
 ]

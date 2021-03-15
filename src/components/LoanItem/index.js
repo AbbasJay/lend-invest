@@ -1,10 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
-import {
-  showInvestModal,
-  setSelectedLoan,
-} from "../../redux/current-loans/actions";
+import { showInvestModal, setSelectedLoan } from "../../redux/actions";
 
 import "./styles.css";
 
@@ -17,7 +14,7 @@ export const LoanItem = ({ loan }) => {
   };
 
   return (
-    <div className={"loan-item"} key={loan.id}>
+    <div className={"loan-item"}>
       <div>
         <h3>{loan.title}</h3>
         <div className={"loan-details"}>
@@ -30,7 +27,7 @@ export const LoanItem = ({ loan }) => {
       <div className={"invest-container"}>
         <div className={"invest-text"}>{}</div>
         <div>
-          <button className={"invest-button"} onClick={() => handleClick(loan)}>
+          <button className={"invest-button"} onClick={handleClick}>
             INVEST
           </button>
         </div>

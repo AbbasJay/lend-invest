@@ -1,14 +1,14 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
 import renderer from "react-test-renderer";
 
 import { mount } from "enzyme";
 
 import { LoanItem } from "./";
-import { mockInitialState } from "../../mocks";
 
-const mockStore = createStore(mockInitialState);
+import store from "../../redux/store";
+
+import { showInvestModal, setSelectedLoan } from "../../redux/actions";
 
 const mockLoan = {
   title: "title 1.",
@@ -20,11 +20,11 @@ const mockLoan = {
   amount: "85,754",
 };
 
-const showInvestModal = jest.fn();
+const mockDispatch = jest.spyOn(store, "dispatch");
 
 const renderedComponent = () => {
   return mount(
-    <Provider store={mockStore}>
+    <Provider store={store}>
       <LoanItem loan={mockLoan} />
     </Provider>
   );
@@ -35,14 +35,24 @@ describe("LoanItem", () => {
     jest.resetAllMocks();
   });
 
-  const component = renderedComponent();
-
   it("renders correctly to snapshot", () => {
+    const component = renderedComponent();
     const snapshot = renderer.create(component).toJSON();
+
     expect(snapshot).toMatchSnapshot();
   });
 
   it("should render component", () => {
+    const component = renderedComponent();
+
     expect(component.length).toBe(1);
+  });
+
+  it("should call correct actions", () => {
+    const component = renderedComponent();
+    component.find("button").simulate("click");
+
+    expect(mockDispatch).toHaveBeenCalledWith(showInvestModal());
+    expect(mockDispatch).toHaveBeenCalledWith(setSelectedLoan(mockLoan));
   });
 });

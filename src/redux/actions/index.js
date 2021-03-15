@@ -17,3 +17,8 @@ export const setSelectedLoan = (loan) => ({
   type: constants.SET_SELECTED_LOAN,
   payload: { loan },
 });
+
+export const setInvestedAmount = (loanId, investAmount) => ({
+  type: constants.SET_INVESTED_AMOUNT,
+  payload: { loanId, investAmount },
+});

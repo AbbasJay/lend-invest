@@ -1,8 +1,8 @@
-import { currentLoansReducer, initialState } from "./";
+import { currentLoansReducer, initialState } from ".";
 import { setCurrentLoans } from "../../actions";
 
 let mockInitialState = {
-  loans: null,
+  loans: [],
 };
 
 const currentLoans = {

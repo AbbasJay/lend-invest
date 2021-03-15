@@ -1,4 +1,4 @@
-export const mockInitialState = () => ({
+export const mockInitialState = {
   currentLoans: {
     loans: [
       {
@@ -41,4 +41,4 @@ export const mockInitialState = () => ({
     ltv: "48.80",
     amount: "85,754",
   },
-});
+};

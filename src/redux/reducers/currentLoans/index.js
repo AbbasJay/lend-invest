@@ -1,7 +1,7 @@
 import * as constants from "../../constants";
 
 export const initialState = {
-  loans: null,
+  loans: [],
 };
 
 export const currentLoansReducer = (state = initialState, action) => {
@@ -10,6 +10,20 @@ export const currentLoansReducer = (state = initialState, action) => {
       return {
         ...state,
         loans: action.payload.currentLoans.loans,
+      };
+    }
+
+    case constants.SET_INVESTED_AMOUNT: {
+      const newLoans = [...state.loans];
+
+      const loanIndex = newLoans.findIndex(
+        (loan) => loan.id === action.payload.loanId
+      );
+      newLoans[loanIndex].available = action.payload.investAmount;
+
+      return {
+        ...state,
+        loans: newLoans,
       };
     }
     default:

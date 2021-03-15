@@ -1,4 +1,4 @@
-import { convertToCurrency } from "./";
+import { convertLoansToCurrencies } from "./";
 
 const mockLoans = [
   {
@@ -13,9 +13,9 @@ const mockLoans = [
 ];
 
 describe("utilities", () => {
-  describe("convertToCurrency function", () => {
+  describe("convertLoansToCurrencies function", () => {
     it("should take in comma seperated strings and return the sum in currency format", () => {
-      const convertedNumber = convertToCurrency(mockLoans);
+      const convertedNumber = convertLoansToCurrencies(mockLoans);
       expect(convertedNumber).toEqual("£24,750");
     });
   });
